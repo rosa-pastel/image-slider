@@ -2,4 +2,4 @@
 
 Image carousel with slide effect
 
-![Demo]("./src/demo.gif")
+![Demo]("./demo.gif")
