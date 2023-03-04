@@ -1,0 +1,39 @@
+{
+  "name": "@rosapastel/image-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosa-pastel/image-slider.git"
+  },
+  "keywords": [
+    "image-slider",
+    "imageslider",
+    "carousel",
+    "image-carousel",
+    "imagecarousel",
+    "image"
+  ],
+  "author": "rosapastel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosa-pastel/image-slider/issues"
+  },
+  "homepage": "https://github.com/rosa-pastel/image-slider#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

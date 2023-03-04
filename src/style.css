@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "typo-graphica";
+  src: url("./fonts/Typographica-Blp5.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: yellowgreen;
+  height: 100vh;
+}
+div.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 20vmax);
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-size: cover;
+  transition: left 300ms ease-in-out, color 300ms ease-in-out,
+    text-shadow 300ms ease-in-out;
+  position: absolute;
+  color: rgba(255, 255, 255, 0);
+  letter-spacing: 1vmax;
+  font-size: calc(10px + 5vw);
+  font-family: "typo-graphica";
+  white-space: pre-line;
+}
+#image-container {
+  position: relative;
+  width: calc(5 * (100vw - 20vmax));
+  height: 100%;
+}
+.image:first-child {
+  background-image: url("./images/madrid.jpg");
+}
+.image:nth-child(2) {
+  background-image: url("./images/bilbao.jpg");
+}
+.image:nth-child(3) {
+  background-image: url("./images/barcelona.jpg");
+}
+.image:nth-child(4) {
+  background-image: url("./images/gijon.jpg");
+}
+.image:nth-child(5) {
+  background-image: url("./images/san-sebastian.jpg");
+}
+#zero {
+  left: 0;
+  z-index: -1;
+}
+#one {
+  left: calc(100vw - 20vmax);
+  z-index: 0;
+}
+#two {
+  text-shadow: 0 0 10px black;
+  color: #eee;
+  left: calc(2 * (100vw - 20vmax));
+}
+#three {
+  left: calc(3 * (100vw - 20vmax));
+  z-index: 0;
+}
+#four {
+  left: calc(4 * (100vw - 20vmax));
+  z-index: -1;
+}
+.carousel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 10vmax;
+  top: 0;
+  z-index: 1;
+}
+.arrow img {
+  width: 40%;
+  height: auto;
+  opacity: 0.9;
+}
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#arrow-right {
+  right: 0;
+}
+#arrow-right img {
+  content: url("./images/right-arrow.png");
+}
+#arrow-left {
+  left: 0;
+}
+#arrow-left img {
+  content: url("./images/left-arrow.png");
+}
