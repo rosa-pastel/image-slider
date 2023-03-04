@@ -68,6 +68,25 @@ div.image {
   left: calc(4 * (100vw - 20vmax));
   z-index: -1;
 }
+#nav-circles {
+  font-size: 30px;
+  display: flex;
+  color: #eee;
+  padding-bottom: 50px;
+  position: absolute;
+  bottom: 0;
+  gap: 20px;
+  margin: auto;
+}
+.circle::after {
+  content: "○";
+}
+.circle-full::after {
+  content: "●";
+}
+.circle:hover {
+  cursor: pointer;
+}
 .carousel {
   height: 100%;
   display: flex;
